@@ -1,0 +1,185 @@
+.signature-pad2 {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	font-size: 10px;
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 16px;
+}
+
+.signature-pad2::before,
+.signature-pad2::after {
+	position: absolute;
+	z-index: -1;
+	content: '';
+	width: 100%;
+	height: 10px;
+	bottom: 10px;
+	background: transparent;
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.signature-pad2::before {
+	left: 20px;
+	-webkit-transform: skew(-3deg) rotate(-3deg);
+	transform: skew(-3deg) rotate(-3deg);
+}
+
+.signature-pad2::after {
+	right: 20px;
+	-webkit-transform: skew(3deg) rotate(3deg);
+	transform: skew(3deg) rotate(3deg);
+}
+
+.signature-pad--body2 {
+	position: relative;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	border: 1px solid #f4f4f4;
+}
+
+.signature-pad--body2 canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.signature-pad--footer2 {
+	color: #c3c3c3;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 8px;
+}
+
+.signature-pad--actions2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.modal-sign {
+	display: none;
+	position: fixed;
+	padding-top: 10%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.527);
+}
+.modal-content-sign {
+	position: relative;
+	padding: 20px;
+	margin: auto;
+	width: 60%;
+}
+.close-btn {
+	justify-content: center;
+	display: flex;
+	display: inline-block;
+	color: #fff;
+	height: 30px;
+	background-color: #d35400;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.cancel-btn {
+	justify-content: center;
+	display: flex;
+	display: inline-block;
+	color: #fff;
+	height: 30px;
+	background-color: #626262;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.close-btn:hover {
+	color: #e3e3e3;
+	background-color: #525252;
+}
+
+.close-btn2 {
+	justify-content: center;
+	display: flex;
+	display: inline-block;
+	color: #fff;
+	height: 30px;
+	background-color: #d35400;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.close-btn2:hover {
+	color: #e3e3e3;
+	background-color: #626262;
+}
+
+.close-btn3 {
+	justify-content: center;
+	display: flex;
+	display: inline-block;
+	color: #fff;
+	height: 30px;
+	background-color: #d35400;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.close-btn3:hover {
+	color: #e3e3e3;
+	background-color: #626262;
+}
+
+@-webkit-keyframes fadeinout {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeinout {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

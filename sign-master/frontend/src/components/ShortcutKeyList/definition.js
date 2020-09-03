@@ -1,0 +1,16 @@
+export const SHORTCUT_DEFINITION = {
+	COPY: 'copy',
+	PASTE: 'paste',
+	CUT: 'cut',
+	DELETE: 'delete',
+	DUPLICATE: 'duplicate',
+	SAVE: 'save',
+	CANCEL: 'cancel',
+	CHANGE_RECIPIENT_UP: 'change_recipient_up',
+	CHANGE_RECIPIENT_DOWN: 'change_recipient_down',
+	MOVE_UP: 'move_up',
+	MOVE_DOWN: 'move_down',
+	MOVE_RIGHT: 'move_right',
+	MOVE_LEFT: 'move_left',
+	SHOW_SHORTCUT_MODAL: 'show_shortcut_modal',
+};

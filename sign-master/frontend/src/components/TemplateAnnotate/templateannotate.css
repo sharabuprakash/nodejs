@@ -1,0 +1,27 @@
+.templatepdfAnNotateContainer #templatedragabbleImageText {
+	position: fixed;
+	width: 100px;
+	height: auto;
+}
+
+.templatepdfAnNotateContainer #templatedragabbleImageSign {
+	position: fixed;
+	width: 80px;
+	height: auto;
+}
+
+.templatepdfAnNotateContainer #templatedragabbleImageInitial {
+	position: fixed;
+	width: 70px;
+	height: auto;
+}
+
+canvas,
+.canvas-container {
+	margin-bottom: 25px;
+}
+
+.canvas-container {
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,60 @@
+.sign-manager-upload-tab {
+	display: flex;
+	padding: 20px;
+
+	.dropzone {
+		border: 2px dashed #ccc;
+		height: 180px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&.error {
+			border: 2px dashed red;
+
+			.error-message {
+				display: block;
+			}
+		}
+
+		.error-message {
+			display: none;
+			color: red;
+		}
+
+		> img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+		.upload-icon {
+			font-size: 40px;
+			margin-bottom: 5px;
+		}
+
+		.remove-icon {
+			position: absolute;
+			font-size: 25px;
+			right: 5px;
+			top: 5px;
+			cursor: pointer;
+			color: #b0b7c2;
+
+			&:hover {
+				color: #d35400;
+			}
+		}
+
+		&:first-child {
+			flex: 2;
+			margin-right: 10px;
+		}
+
+		&:last-child {
+			flex: 1;
+		}
+	}
+}

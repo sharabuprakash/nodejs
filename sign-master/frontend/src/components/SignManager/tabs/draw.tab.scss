@@ -1,0 +1,58 @@
+.sign-manager-draw-tab {
+	display: flex;
+	padding: 20px;
+
+	@media screen and (max-width: 640px) {
+		flex-direction: column;
+	}
+
+	.drawer-box {
+		border: 2px dashed #ccc;
+		padding: 15px 15px 0 15px;
+
+		@media screen and (max-width: 640px) {
+			height: 180px !important;
+			margin: 0 0 10px 0 !important;
+		}
+
+		.drawer-area {
+			canvas {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				top: 0;
+				box-shadow: none;
+			}
+		}
+
+		.intro {
+			margin-top: 10px;
+			padding: 10px 0;
+			border-top: 1px solid #e3e3e3;
+			display: flex;
+			justify-content: space-between;
+			i {
+				cursor: pointer;
+				font-size: 20px;
+				&:hover {
+					color: #d35400;
+				}
+			}
+			label {
+				user-select: none;
+				text-align: center;
+				display: block;
+				margin-bottom: 0;
+			}
+		}
+
+		&:first-child {
+			flex: 2;
+			margin-right: 10px;
+		}
+
+		&:last-child {
+			flex: 1;
+		}
+	}
+}

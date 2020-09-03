@@ -1,0 +1,39 @@
+.pdfAnNotateContainer #dragabbleImageText {
+	position: fixed;
+	width: 100px;
+	height: auto;
+}
+
+.pdfAnNotateContainer #dragabbleImageSign {
+	position: fixed;
+	width: 60px;
+	height: auto;
+}
+
+.pdfAnNotateContainer #dragabbleImageInitial {
+	position: fixed;
+	width: 60px;
+	height: auto;
+}
+
+#movecursorbtn {
+	position: absolute;
+	text-align: left !important;
+	float: left !important;
+	margin-top: 10px !important;
+	left: 0 !important;
+
+	display: none;
+
+	top: 60px;
+}
+
+canvas,
+.canvas-container {
+	margin-bottom: 25px;
+}
+
+.canvas-container {
+	margin-left: auto;
+	margin-right: auto;
+}

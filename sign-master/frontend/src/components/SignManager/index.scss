@@ -1,0 +1,82 @@
+.sign-manager-modal {
+	padding: 30px !important;
+	overflow-y: auto;
+	display: flex !important;
+	align-items: center;
+
+	.modal-content {
+		padding: 0;
+		display: block;
+		text-align: left;
+		width: 60%;
+
+		@media screen and (max-width: 640px) {
+			width: 95%;
+		}
+	}
+
+	.sign-manager-title {
+		font-weight: bold;
+		padding: 20px;
+		font-size: 16px;
+		border-bottom: 1px solid #e3e3e3;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		i {
+			cursor: pointer;
+			font-size: 20px;
+
+			&:hover {
+				color: #d35400;
+			}
+		}
+	}
+
+	.sign-manager-form {
+		padding: 20px;
+		border-bottom: 1px solid #e3e3e3;
+
+		.row > div {
+			margin-bottom: 15px;
+		}
+
+		.form-group {
+			margin-bottom: 0;
+		}
+	}
+
+	.sign-manager-tabs {
+		.sign-manager-tabs-selector {
+			padding: 0 20px;
+			user-select: none;
+			.nav-item {
+				a {
+					background: none;
+					border: none;
+					padding: 10px 20px;
+					font-size: 12px !important;
+					text-transform: uppercase;
+					font-weight: bold;
+					cursor: pointer;
+					&.active,
+					&:hover {
+						border-bottom: 4px solid #d35400;
+						color: #d35400;
+					}
+				}
+			}
+		}
+
+		.sign-manager-tabs-content {
+			background-color: #f4f4f4;
+			border: none !important;
+		}
+		border-bottom: 1px solid #e3e3e3;
+	}
+
+	.sign-manager-footer {
+		padding: 20px;
+	}
+}

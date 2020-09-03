@@ -1,0 +1,125 @@
+@import './sign-fonts.scss';
+
+.sign-manager-choose-tab {
+	height: 250px;
+	overflow-y: auto;
+	> .sign-box {
+		display: flex;
+		padding: 10px 20px;
+		height: 120px;
+		align-items: center;
+		margin-bottom: 0;
+
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		@media screen and (max-width: 640px) {
+			height: 230px !important;
+		}
+
+		input {
+			display: none;
+			cursor: pointer;
+
+			&:checked ~ .checkmark {
+				background-color: #d35400;
+			}
+		}
+
+		.checkmark {
+			height: 25px;
+			width: 25px;
+			background-color: #fff;
+			border: 1px solid #b0b7c2;
+			border-radius: 50%;
+			margin-right: 10px;
+			position: relative;
+
+			&:after {
+				width: 23px;
+				height: 23px;
+				content: '';
+				border: 3px solid #fff;
+				display: block;
+				border-radius: 50%;
+			}
+		}
+
+		.sign-image-container {
+			width: 90%;
+			display: flex;
+			align-items: flex-start;
+
+			@media screen and (max-width: 640px) {
+				flex-direction: column;
+				height: 90%;
+			}
+
+			.sign-image-box {
+				position: relative;
+				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+				color: black;
+				padding-left: 25px;
+				margin: 0 10px;
+
+				canvas {
+					margin-bottom: 0 !important;
+				}
+
+				img {
+					margin-top: 4px;
+					margin-left: -10px;
+				}
+
+				.signed-by {
+					text-align: left;
+					font-size: 12px;
+					font-weight: bold;
+				}
+
+				.sign-id {
+					text-align: left;
+					font-size: 12px;
+					margin-top: 3px;
+				}
+
+				&.sign-image-box-signature {
+					max-width: 60%;
+				}
+
+				&.sign-image-box-initials {
+					max-width: 40%;
+				}
+
+				&:before {
+					border-bottom: 2px solid #d35400;
+					border-left: 2px solid #d35400;
+					border-radius: 5px 0 0 5px;
+					border-top: 2px solid #d35400;
+					content: '';
+					display: block;
+					height: 77px;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 20px;
+					margin-top: 8px;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			border-bottom: 2px solid #eee;
+		}
+
+		&:hover input ~ .checkmark {
+			background-color: #d35400;
+		}
+	}
+}
